@@ -1,4 +1,4 @@
-import "../layout/sidebar.scss";
+import "../layout/Sidebar.scss";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../auth/useAuth";
 import Pomodoro from "../UI/Pomodoro";
