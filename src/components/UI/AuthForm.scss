@@ -1,0 +1,123 @@
+div.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+form.authForm {
+  background-color: white;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+
+  h1 {
+    text-align: center;
+  }
+
+  label.authFormLabel {
+    display: block;
+    padding-bottom: 15px;
+
+    input.authFormInput {
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid lightgray;
+    }
+  }
+
+  div.authFormButton {
+    text-align: center;
+  }
+
+  div.authFormButton button {
+    background-color: #b4f056;
+    color: black;
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #aae038;
+    }
+  }
+
+  p.errorMessage {
+    color: red;
+  }
+
+  p.accountLabel {
+    color: gray;
+  }
+}
+
+@media (max-width: 1024px) {
+  form.authForm {
+    max-width: 320px;
+    padding: 18px;
+  }
+
+  form.authForm h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  div.form {
+    margin: 30px;
+  }
+
+  form.authForm {
+    width: 95%;
+    max-width: 300px;
+    padding: 16px;
+  }
+
+  label.authFormLabel input.authFormInput {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  div.authFormButton button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  div.form {
+    margin: 20px;
+  }
+
+  form.authForm {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px;
+  }
+
+  form.authForm h1 {
+    font-size: 20px;
+  }
+
+  label.authFormLabel input.authFormInput {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  div.authFormButton button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  p.accountLabel {
+    font-size: 14px;
+  }
+}

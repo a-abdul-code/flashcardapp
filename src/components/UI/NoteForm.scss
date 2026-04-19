@@ -1,0 +1,144 @@
+div.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.frontCardContainer,
+div.setNameCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div.frontCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label.setNameLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+  margin: auto;
+
+  input.setNameInput {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+  }
+}
+
+label.descriptionLabel,
+label.backLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+  margin: auto;
+
+  textarea.descriptionInput {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    resize: vertical;
+  }
+
+  textarea.noteTextInput {
+    width: 100%;
+    height: 350px;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+}
+
+div.createSetButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  button {
+    cursor: pointer;
+    color: black;
+    background-color: #b4f056;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: #aae038;
+    }
+  }
+}
+
+p.error {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 85%;
+    padding: 15px;
+  }
+
+  label.setNameLabel,
+  label.descriptionLabel,
+  label.backLabel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 95%;
+    padding: 12px;
+  }
+
+  input.setNameInput,
+  textarea.descriptionInput,
+  textarea.noteTextInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

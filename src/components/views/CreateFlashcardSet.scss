@@ -1,0 +1,230 @@
+div.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.frontCardContainer {
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div.setNameCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div.frontCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label.setNameLabel,
+label.frontLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+  margin: auto;
+
+  .labelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span {
+      flex: 0 0 auto;
+    }
+
+    .deleteButtonContainer {
+      display: flex;
+      justify-content: center;
+
+      .deleteButton {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9fafb;
+        border: 1px solid #d1d5db;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        img {
+          width: 18px;
+          height: 18px;
+          transition: opacity 0.2s;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  input.setNameInput,
+  input.frontInput {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+  }
+}
+
+label.descriptionLabel,
+label.backLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 95%;
+  margin: auto;
+
+  textarea.descriptionInput {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    resize: vertical;
+  }
+
+  textarea.backInput {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    resize: vertical;
+  }
+}
+
+div.addCardButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+div.createSetButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  button {
+    cursor: pointer;
+    color: black;
+    background-color: #b4f056;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      background-color: #aae038;
+    }
+  }
+}
+
+p.error {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 85%;
+    padding: 15px;
+  }
+
+  label.setNameLabel,
+  label.frontLabel,
+  label.descriptionLabel,
+  label.backLabel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  div.frontCardContainer,
+  div.setNameCard {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .deleteButton {
+    width: 28px;
+    height: 28px;
+  }
+
+  .deleteButton img {
+    width: 16px;
+    height: 16px;
+  }
+
+  input.setNameInput,
+  input.frontInput,
+  textarea.descriptionInput,
+  textarea.backInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

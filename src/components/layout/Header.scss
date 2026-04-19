@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  background-color: white;
+
+  h1.websiteTitle {
+    font-size: 24px;
+  }
+
+  button.signOutButton {
+    margin-right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

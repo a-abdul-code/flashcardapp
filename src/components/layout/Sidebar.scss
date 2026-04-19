@@ -1,0 +1,68 @@
+nav.sidebar {
+  background-color: #f2f2f2;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+
+  div.collapseItem {
+    display: flex;
+
+    img.collapseImage {
+      margin-left: auto;
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+
+  div.profileItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    img.profileImage {
+      width: 52px;
+      height: auto;
+    }
+
+    p.profileCollapsed {
+      font-size: 0;
+    }
+  }
+
+  div.navItem {
+    .navbutton,
+    .navbuttonCollapsed {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 90%;
+      padding: 10px;
+
+      img {
+        width: 30px;
+        height: auto;
+      }
+    }
+
+    .navbuttonCollapsed {
+      font-size: 0;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .navbutton.active,
+    .navbuttonCollapsed.active {
+      font-weight: 600;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+  .pomodoroWrapper {
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
+}
